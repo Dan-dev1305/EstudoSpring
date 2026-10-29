@@ -1,4 +1,8 @@
 package br.com.loja.backend.produtos;
 
-public interface ProdutoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProdutoRepository extends JpaRepository<ProdutoModel, Integer> {
+
+
 }
